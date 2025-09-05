@@ -1,96 +1,96 @@
-00100000	 	&#32;	 	Space
-00100001	!	&#33;	&excl;	Exclamation mark
-00100010	"	&#34;	&quot;	Double quotes (or speech marks)
-00100011	#	&#35;	&num;	Number sign
-00100100	$	&#36;	&dollar;	Dollar
-00100101	%	&#37;	&percnt;	Per cent sign
-00100110	&	&#38;	&amp;	Ampersand
-00100111	'	&#39;	&apos;	Single quote
-00101000	(	&#40;	&lparen;	Open parenthesis (or open bracket)
-00101001	)	&#41;	&rparen;	Close parenthesis (or close bracket)
-00101010	*	&#42;	&ast;	Asterisk
-00101011	+	&#43;	&plus;	Plus
-00101100	,	&#44;	&comma;	Comma
-00101101	-	&#45;	 	Hyphen-minus
-00101110	.	&#46;	&period;	Period, dot or full stop
-00101111	/	&#47;	&sol;	Slash or divide
-00110000	0	&#48;	 	Zero
-00110001	1	&#49;	 	One
-00110010	2	&#50;	 	Two
-00110011	3	&#51;	 	Three
-00110100	4	&#52;	 	Four
-00110101	5	&#53;	 	Five
-00110110	6	&#54;	 	Six
-00110111	7	&#55;	 	Seven
-00111000	8	&#56;	 	Eight
-00111001	9	&#57;	 	Nine
-00111010	:	&#58;	&colon;	Colon
-00111011	;	&#59;	&semi;	Semicolon
-00111100	<	&#60;	&lt;	Less than (or open angled bracket)
-00111101	=	&#61;	&equals;	Equals
-00111110	>	&#62;	&gt;	Greater than (or close angled bracket)
-00111111	?	&#63;	&quest;	Question mark
-01000000	@	&#64;	&commat;	At sign
-01000001	A	&#65;	 	Uppercase A
-01000010	B	&#66;	 	Uppercase B
-01000011	C	&#67;	 	Uppercase C
-01000100	D	&#68;	 	Uppercase D
-01000101	E	&#69;	 	Uppercase E
-01000110	F	&#70;	 	Uppercase F
-01000111	G	&#71;	 	Uppercase G
-01001000	H	&#72;	 	Uppercase H
-01001001	I	&#73;	 	Uppercase I
-01001010	J	&#74;	 	Uppercase J
-01001011	K	&#75;	 	Uppercase K
-01001100	L	&#76;	 	Uppercase L
-01001101	M	&#77;	 	Uppercase M
-01001110	N	&#78;	 	Uppercase N
-01001111	O	&#79;	 	Uppercase O
-01010000	P	&#80;	 	Uppercase P
-01010001	Q	&#81;	 	Uppercase Q
-01010010	R	&#82;	 	Uppercase R
-01010011	S	&#83;	 	Uppercase S
-01010100	T	&#84;	 	Uppercase T
-01010101	U	&#85;	 	Uppercase U
-01010110	V	&#86;	 	Uppercase V
-01010111	W	&#87;	 	Uppercase W
-01011000	X	&#88;	 	Uppercase X
-01011001	Y	&#89;	 	Uppercase Y
-01011010	Z	&#90;	 	Uppercase Z
-01011011	[	&#91;	&lsqb;	Opening bracket
-01011100	\	&#92;	&bsol;	Backslash
-01011101	]	&#93;	&rsqb;	Closing bracket
-01011110	^	&#94;	&Hat;	Caret - circumflex
-01011111	_	&#95;	&lowbar;	Underscore
-01100000	`	&#96;	&grave;	Grave accent
-01100001	a	&#97;	 	Lowercase a
-01100010	b	&#98;	 	Lowercase b
-01100011	c	&#99;	 	Lowercase c
-01100100	d	&#100;	 	Lowercase d
-01100101	e	&#101;	 	Lowercase e
-01100110	f	&#102;	 	Lowercase f
-01100111	g	&#103;	 	Lowercase g
-01101000	h	&#104;	 	Lowercase h
-01101001	i	&#105;	 	Lowercase i
-01101010	j	&#106;	 	Lowercase j
-01101011	k	&#107;	 	Lowercase k
-01101100	l	&#108;	 	Lowercase l
-01101101	m	&#109;	 	Lowercase m
-01101110	n	&#110;	 	Lowercase n
-01101111	o	&#111;	 	Lowercase o
-01110000	p	&#112;	 	Lowercase p
-01110001	q	&#113;	 	Lowercase q
-01110010	r	&#114;	 	Lowercase r
-01110011	s	&#115;	 	Lowercase s
-01110100	t	&#116;	 	Lowercase t
-01110101	u	&#117;	 	Lowercase u
-01110110	v	&#118;	 	Lowercase v
-01110111	w	&#119;	 	Lowercase w
-01111000	x	&#120;	 	Lowercase x
-01111001	y	&#121;	 	Lowercase y
-01111010	z	&#122;	 	Lowercase z
-01111011	{	&#123;	&lcub;	Opening brace
-01111100	|	&#124;	&verbar;	Vertical bar
-01111101	}	&#125;	&rcub;	Closing brace
-01111110	~	&#126;	&tilde;	Equivalency sign - tilde
-01111111	DEL	&#127;	 	Delete
+00100000
+00100001
+00100010
+00100011
+00100100
+00100101
+00100110
+00100111
+00101000
+00101001
+00101010
+00101011
+00101100
+00101101
+00101110
+00101111
+00110000
+00110001
+00110010
+00110011
+00110100
+00110101
+00110110
+00110111
+00111000
+00111001
+00111010
+00111011
+00111100
+00111101
+00111110
+00111111
+01000000
+01000001
+01000010
+01000011
+01000100
+01000101
+01000110
+01000111
+01001000
+01001001
+01001010
+01001011
+01001100
+01001101
+01001110
+01001111
+01010000
+01010001
+01010010
+01010011
+01010100
+01010101
+01010110
+01010111
+01011000
+01011001
+01011010
+01011011
+01011100
+01011101
+01011110
+01011111
+01100000
+01100001
+01100010
+01100011
+01100100
+01100101
+01100110
+01100111
+01101000
+01101001
+01101010
+01101011
+01101100
+01101101
+01101110
+01101111
+01110000
+01110001
+01110010
+01110011
+01110100
+01110101
+01110110
+01110111
+01111000
+01111001
+01111010
+01111011
+01111100
+01111101
+01111110
+01111111

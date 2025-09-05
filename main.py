@@ -6,9 +6,9 @@ adder = []
 # Example: Replace a word on a specific line
 for i, line in enumerate(lines):
     
-    adder.append(line[9]+"\n")
+    adder.append(line[:8]+"\n")
 
 # Example: Add a new line
 
-with open('translation.txt', 'w') as f:
+with open('binary.txt', 'w') as f:
     f.writelines(adder) # or f.write(content)
