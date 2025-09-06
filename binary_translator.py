@@ -34,8 +34,24 @@ def binary_to_text(str: str) -> str:
     
     return(final)
 
+def text_to_binary(str: str) -> str:
+    string = str
+    final = ""
+    for char in string:
+        final +=((alphabet.get(char + "\n")[:8])+" ")
+    
+    return final
+    
+
 while True:
-    get_input = input("Enter Binary code: ")
-    print(binary_to_text(get_input))
+    what_to_be_translated = input("Translate BIN to Text (1) or Text to BIN (2): ")
+    if what_to_be_translated == "1":
+        get_input = input("Enter Binary code: ")
+        print(binary_to_text(get_input))
+    elif what_to_be_translated == "2":
+        get_alphbet = input("Enter text to be translation: ")
+        print(text_to_binary(get_alphbet))
+    else:
+        print("try again")
 
     
