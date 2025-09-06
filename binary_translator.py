@@ -1,22 +1,17 @@
 
 with open('binary.txt', 'r') as f:
-    lines = f.readlines() # or content = f.read()
+    lines = f.readlines() 
 
 with open('translation.txt', 'r') as f:
-    translation = f.readlines() # or content = f.read()
+    translation = f.readlines() #gets lines from both
 
 binary_dict = {}
 for i in range(len(lines)-1):
     binary_dict[lines[i]] = translation[i]
 
 alphabet = {}
-for i in range(len(lines)-1): #and teh reverse
+for i in range(len(lines)-1): #and teh reverse for alphabet
     alphabet[translation[i]] = lines[i]
-
-# print(binary_dict["01000001"])
-
-# for item in binary_dict:
-#     print(item, binary_dict.get(item))
 
 def binary_to_text(str: str) -> str:
     string = str
@@ -24,19 +19,16 @@ def binary_to_text(str: str) -> str:
     while len(string)> 6:
             stringA = string[:8]
             string = string[9:]
-            # stringA, stringB = string.split(" ")
-            # string = stringB
             list.append(stringA)
-            # print(list)
-    # list.append(string)
+            
     final = ""
+    char = ""
     for bin in list:
-        # print(f"|{bin}|")
         if "00100000" in bin:
             char = " "
         else:    
            char =(binary_dict.get(bin + "\n"))
-           char = char[0]
+           char = char[0] # type: ignore
 
         final += char
     
