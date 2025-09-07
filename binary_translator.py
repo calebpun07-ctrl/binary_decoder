@@ -10,7 +10,7 @@ for i in range(len(lines)-1):
     binary_dict[lines[i]] = translation[i]
 
 alphabet = {}
-for i in range(len(lines)-1): #and teh reverse for alphabet
+for i in range(len(lines)-1): #and the reverse for alphabet
     alphabet[translation[i]] = lines[i]
 
 def binary_to_text(str: str) -> str:
