@@ -16,23 +16,32 @@ for i in range(len(lines)-1): #and the reverse for alphabet
 def binary_to_text(str: str) -> str:
     string = str
     list = []
-    while len(string)> 6:
-            stringA = string[:8]
-            string = string[9:]
-            list.append(stringA)
-            
+    # while len(string)> 6:
+    #         stringA = string[:8]
+    #         string = string[9:]
+    #         list.append(stringA)
+    
+    while " " in string:
+        a, b = string.split(" ")
+        list.append(a)
+        string = b
+
     final = ""
     char = ""
     for bin in list:
-        if "00100000" in bin:
-            char = " "
-        else:    
-           char =(binary_dict.get(bin + "\n"))
-           char = char[0] # type: ignore
+        if len(bin) == 8:
 
-        final += char
-    
+            if "00100000" in bin:
+                char = " "
+            else:    
+                char =(binary_dict.get(bin + "\n"))
+                char = char[0] # type: ignore
+
+                final += char
+        else:
+            return("ERROR, BAD BIN NUMBER")
     return(final)
+    
 
 def text_to_binary(str: str) -> str:
     string = str
@@ -44,7 +53,7 @@ def text_to_binary(str: str) -> str:
     
 
 while True:
-    what_to_be_translated = input("Translate BIN to Text (1) or Text to BIN (2): ")
+    what_to_be_translated = input("\nTranslate BIN to Text (1) or Text to BIN (2): ")
     if what_to_be_translated == "1":
         get_input = input("Enter Binary code: ")
         print(binary_to_text(get_input))
