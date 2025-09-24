@@ -13,22 +13,20 @@ alphabet = {}
 for i in range(len(lines)-1): #and the reverse for alphabet
     alphabet[translation[i]] = lines[i]
 
-def binary_to_text(str: str) -> str:
-    string = str
-    list = []
-    # while len(string)> 6:
-    #         stringA = string[:8]
-    #         string = string[9:]
-    #         list.append(stringA)
-    
-    while " " in string:
-        a, b = string.split(" ")
-        list.append(a)
-        string = b
+def binary_to_text(bin_str: str) -> str:
+    string = bin_str
+    list_o_bin = []
 
+    while " " in string:
+        
+        print(string, "wheee")
+        a, b = string.split(" ", 1)
+        list_o_bin.append(a)
+        string = b
+        
     final = ""
     char = ""
-    for bin in list:
+    for bin in list_o_bin:
         if len(bin) == 8:
 
             if "00100000" in bin:
