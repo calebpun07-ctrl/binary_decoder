@@ -13,22 +13,31 @@ alphabet = {}
 for i in range(len(lines)-1): #and the reverse for alphabet
     alphabet[translation[i]] = lines[i]
 
-def binary_to_text(bin_str: str) -> str:
-    string = bin_str
-    list_o_bin = []
+def check_only(check_str):
+    string = ""
+    list_bin =[]
+    # first remove spaces and non 1s and 0s
+    for char in check_str:
+        if char == "1" or char == "0":
+            string = string + char
+        else:
+            continue
+    # then loop though and cut off every 8th char from the string
+    while len(string) >=8:
+        a = string[:8]
+        list_bin.append(a)
+        string = string[8:]
 
-    while " " in string:
-        
-        print(string, "wheee")
-        a, b = string.split(" ", 1)
-        list_o_bin.append(a)
-        string = b
+    # return a list
+    return list_bin
+
+def binary_to_text(bin_str: str) -> str:
+    list_o_bin = check_only(bin_str)
         
     final = ""
     char = ""
     for bin in list_o_bin:
         if len(bin) == 8:
-
             if "00100000" in bin:
                 char = " "
             else:    
@@ -37,7 +46,7 @@ def binary_to_text(bin_str: str) -> str:
 
                 final += char
         else:
-            return("ERROR, BAD BIN NUMBER")
+            return("ERROR, BAD ASCII NUMBER")
     return(final)
     
 

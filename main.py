@@ -1,3 +1,4 @@
+from ascii_translator import check_only
 # with open('binary.txt', 'r') as f:
 #     lines = f.readlines()
 
@@ -10,7 +11,11 @@
 # with open('binary.txt', 'w') as f:
 #     f.writelines(adder)
 
-string = "0 0"
-a, b = string.split(' ')
-print(a)
-print(b)
+# string = "0 0"
+# a, b = string.split(' ')
+# print(a)
+# print(b)
+
+string = "12345678911234567890"
+
+print(check_only(string))
