@@ -9,6 +9,12 @@ binary_dict = {}
 for i in range(len(lines)-1):
     binary_dict[lines[i]] = translation[i]
 
+with open('binary_sheet.csv', 'w') as f:
+    for item in binary_dict:
+        
+        f.write(f"{item.replace("\n", "")}, {binary_dict[item].replace("\n", "")}\n")
+input()
+
 alphabet = {}
 for i in range(len(lines)-1): #and the reverse for alphabet
     alphabet[translation[i]] = lines[i]
